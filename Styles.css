@@ -1,69 +1,152 @@
-/* Configuración básica */
-body {
-    font-family: 'Lato', sans-serif;
+/* Reset de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #FFC0CB, #FF6347);
+    box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbe2e2; /* Rosa suave */
     color: #333;
-  }
-  
-  /* Encabezado */
-  header {
-    background-color: #FF6347;
+}
+
+/* Encabezado */
+header {
+    background-color: #ff4d77; /* Rosa fuerte */
     color: white;
-    padding: 15px;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-  }
-  
-  /* Navegación */
-  nav {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Sección principal */
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    color: white;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    font-family: 'Dancing Script', cursive;
-  }
-  
-  /* Galería de fotos */
-  .gallery {
+    padding: 20px 0;
+}
+
+.navbar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  .gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Pie de página */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #FF6347;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
     color: white;
-    font-size: 0.9rem;
-  }
-  
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff80b2; /* Rosa más suave */
+    border-radius: 5px;
+}
+
+/* Sección Hero */
+.hero {
+    background-color: #ff80b2; /* Rosa claro */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Carrusel de Fotos (Estilo Carrete) */
+.carousel {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    overflow: hidden; /* Oculta las imágenes que están fuera del área visible */
+    max-width: 600px; /* Ajusta el tamaño del carrusel */
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex; /* Muestra las imágenes en una fila */
+    transition: transform 1s ease-in-out; /* Suaviza el desplazamiento de las imágenes */
+}
+
+.carousel-images img {
+    width: auto; /* Las imágenes mantendrán sus proporciones */
+    height: 300px; /* Fija la altura de las imágenes */
+    margin-right: 20px; /* Espaciado entre las imágenes */
+    border-radius: 8px;
+}
+
+/* Sección de Frases */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.quotes {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Sección de Momentos */
+#momentos {
+    background-color: #fff0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#momentos p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #ff4d77;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
